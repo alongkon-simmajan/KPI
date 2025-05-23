@@ -1,0 +1,64 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+
+/* ฟอนต์สำหรับทั้งเอกสาร */
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+/* ฟิลด์เซ็ต */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    border-radius: 8px;
+    height: auto;
+    font-family: 'Kanit', sans-serif !important;
+}
+
+/* กลุ่ม input ของ Ant Design */
+.ant-input-group,
+.ant-input-group .ant-input {
+    font-family: 'Kanit', sans-serif !important;
+}
+
+/* ปรับขนาดตัวอักษรและ padding */
+.ant-input-group-addon,
+.ant-input.ant-input-disabled {
+    font-size: 12px !important;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+    cursor: auto;
+    color: black;
+    /* default (light mode) */
+}
+
+/* โหมดมืดสำหรับ input ที่ปิดใช้งาน */
+.dark .ant-input-group-addon,
+.dark .ant-input.ant-input-disabled {
+    color: white !important;
+}
+
+/* แถวสลับสี */
+table.table-stripped tbody tr:nth-child(odd) {
+    @apply bg-[#f2f2f2] dark:bg-black;
+}
+
+/* hover บนแถว */
+table.table-hover tbody tr:hover {
+    @apply bg-[#f2f2f2] dark:bg-black;
+}
+
+/* ปุ่มหลักของ Ant Design */
+.ant-btn-primary {
+    color: #fff;
+    background-color: #1677ff !important;
+    box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+}
+
+/* คลาสฟอนต์เสริม */
+.fontfam {
+    font-family: 'Kanit', sans-serif !important;
+}
